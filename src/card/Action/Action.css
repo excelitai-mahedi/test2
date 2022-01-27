@@ -1,0 +1,34 @@
+.Actionclass{
+
+background-color:white;
+display: flex;
+justify-content: space-between;
+width: 120px;
+
+
+}
+.valuespace{
+ 
+    background-color: snow;
+}
+
+.actionContainer{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+
+}
+.Actionclass span{
+
+    border-color: crimson;
+   
+   text-decoration-color: darkviolet;
+   font-weight: 600;
+   margin-top:5px;
+   width: 200px;
+
+
+
+}
