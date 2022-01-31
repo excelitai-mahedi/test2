@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Navigate } from "react-router-dom";
 import Items from "../items/Items";
 import TODO from "../TODO/TODO";
-import Action from "./Action/Action";
+import Action from "../Action/Action";
 import "./Card.css";
 
 const Card = () => {
@@ -68,6 +69,7 @@ return el;
         <TODO addTodo={addTodo} />
         <Items doneTodo={doneTodo} data={data} delTodo={delTodo}/>
       </div>
+      
     </div>
   );
 };

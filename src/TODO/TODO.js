@@ -4,21 +4,19 @@ import "./TODO.css";
 const TODO = ({ addTodo }) => {
   const [tododata, settododata] = useState("");
 
-  const getvalue = (e) => {    
-      settododata(e.target.value);          
+  const getvalue = (e) => {
+    settododata(e.target.value);
   };
 
   const submitValue = (e) => {
-    e.preventDefault();    
+    e.preventDefault();
     if (tododata) {
-        addTodo(tododata);   
-        e.target.reset();
-        settododata("");
-             
+      addTodo(tododata);
+      e.target.reset();
+      settododata("");
+    } else {
+      alert("Empty");
     }
-    else{
-        alert("Empty")
-    }    
   };
 
   return (
